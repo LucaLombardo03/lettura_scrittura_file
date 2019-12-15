@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lettura_scrittura_file"
         mc:Ignorable="d"
-        Title="MainWindow" Height="341" Width="494">
+        Title="Genera array" Height="338.573" Width="552.25" ResizeMode="NoResize">
     <Grid>
-        <TextBox Name="txtNumero" HorizontalAlignment="Left" Height="45" Margin="290,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" TextAlignment="Center" FontSize="24" FontWeight="Bold"/>
-        <Button Content="Genera" HorizontalAlignment="Left" Height="45" Margin="155,130,0,0" VerticalAlignment="Top" Width="185" Click="Button_Click" FontWeight="Bold" FontFamily="Swis721 Blk BT" FontSize="24" Foreground="Red" Background="#CC000000"/>
-        <Label Content="INSERISCI UN NUMERO POSITIVO:&#xD;&#xA;(LUNGHEZZA ARRAY)" HorizontalAlignment="Left" Height="45" Margin="10,55,0,0" VerticalAlignment="Top" Width="275" Foreground="#FFFB0000" FontWeight="Bold" FontFamily="Swis721 Blk BT" FontSize="14" Background="#FFFFF300"/>
-        <Label Name="lblArray" Content="" HorizontalAlignment="Left" Height="45" Margin="10,205,0,0" VerticalAlignment="Top" Width="466" FontWeight="Bold" FontSize="16" Background="#FFABFB00"/>
-
+        <TextBox Name="txtNumero" HorizontalAlignment="Left" Height="27" Margin="226,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" TextAlignment="Center" FontSize="16" TextChanged="txtNumero_TextChanged" Text="32"/>
+        <Button Name="btnGenera" Content="Genera" HorizontalAlignment="Left" Height="27" Margin="329,82,0,0" VerticalAlignment="Top" Width="98" Click="btnGenera_Click" FontSize="15"  IsEnabled="False"/>
+        <Label Content="Numero di elemeti da creare:" HorizontalAlignment="Left" Height="34" Margin="20,82,0,0" VerticalAlignment="Top" Width="208" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2" />
+        <TextBox Name="txtOutput" HorizontalAlignment="Left" Height="111" Margin="147,141,0,0"  VerticalAlignment="Top" Width="383" TextWrapping="Wrap" TextAlignment="Center" FontSize="15" />
+        <TextBox Name="txtStatus" Height="36" Margin="0,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button Name="btnReset" Content="Reset" HorizontalAlignment="Left" Height="27" Margin="432,82,0,0" VerticalAlignment="Top" Width="98" Click="btnReset_Click" FontSize="15"/>
+        <Label Content="Array generato:" HorizontalAlignment="Left" Height="35" Margin="20,141,0,0" VerticalAlignment="Top" Width="118" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2"/>
+        <Label Content="GENERATORE DI ARRAY" HorizontalAlignment="Left" Height="50" Margin="52.58,10,0,0" VerticalAlignment="Top" Width="289" FontWeight="Bold" FontSize="25" Grid.Column="1"/>
     </Grid>
 </Window>
